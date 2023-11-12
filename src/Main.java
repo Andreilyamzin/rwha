@@ -4,20 +4,19 @@ public class Main {
 
         Author ivan = new Author("Ivan","Grigorovich");
         Author igor = new Author("Igor","Kim");
-        Book Fisherman = new Book("Fisherman", 1908, 2002);
-        Book TheWoodcutter = new Book("TheWoodcutter", 1908,2002);
+        Book Fisherman = new Book("Fisherman", 1861, ivan );
+        Book TheWoodcutter = new Book("TheWoodcutter", 1906,igor);
+
+        System.out.println(Fisherman.getNameBook() + "-" + Fisherman.getAuthor().getName() +
+        " " + Fisherman.getAuthor().getSurname() + " " + Fisherman.getYearOfWriting());
+
+        System.out.println(TheWoodcutter.getNameBook() + "-" + TheWoodcutter.getAuthor().getName() +
+                " " + TheWoodcutter.getAuthor().getSurname() + " " + TheWoodcutter.getYearOfWriting());
 
 
-        System.out.println("ivan.name = " + ivan.getName() + "\n" + "год выхода книги "+
-                Fisherman.getNameBook() + " - " + Fisherman.getYearOfWriting());
-        System.out.println("ivan.surname = " + ivan.getName());
-        System.out.println("igor.name = " + igor.getName() + "\n" + "год выхода книги "+
-                TheWoodcutter.getNameBook() + " - " + TheWoodcutter.getYearOfWriting1());
-        System.out.println("igor.surname = " + igor.getSurname());
 
-
-        Fisherman.setYearOfWriting1(1465);
-        System.out.println("Fisherman.getYearOfWriting1() = " + Fisherman.getYearOfWriting1());
+        Fisherman.setYearOfWriting(1465);
+        System.out.println("Fisherman.getYearOfWriting1() = " + Fisherman.getYearOfWriting());
 
         TheWoodcutter.setYearOfWriting(1525);
         System.out.println("TheWoodcutter.getYearOfWriting() = " + TheWoodcutter.getYearOfWriting());

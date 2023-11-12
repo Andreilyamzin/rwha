@@ -1,31 +1,31 @@
 public class Book {
 private String nameBook;
 private int yearOfWriting;
-private int yearOfWriting1;
-public Book(String nameBook, int yearOfWriting, int yearOfWriting1) {
-        this.nameBook = nameBook;
-        this.yearOfWriting = yearOfWriting;
-        this.yearOfWriting1 = yearOfWriting1;
+private Author author;
+
+        public Book(String nameBook, int yearOfWriting, Author author) {
+                this.nameBook = nameBook;
+                this.yearOfWriting = yearOfWriting;
+                this.author = author;
         }
 
-public int getYearOfWriting(){
-        return this.yearOfWriting;
+        public String getNameBook() {
+                return nameBook;
         }
 
-public String getNameBook (){
-        return this.nameBook;
+        public int getYearOfWriting() {
+                return yearOfWriting;
         }
 
-public int getYearOfWriting1() {
-        return this.yearOfWriting1;
+        public Author getAuthor() {
+                return author;
         }
 
-public void setYearOfWriting(int yearOfWriting) {
-        this.yearOfWriting= yearOfWriting;
+
+        public void setYearOfWriting(int yearOfWriting) {
+                this.yearOfWriting = yearOfWriting;
         }
 
-public void setYearOfWriting1(int yearOfWriting1) {
-        this.yearOfWriting1 = yearOfWriting1;
-        }
 
-        }
+
+}

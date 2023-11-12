@@ -14,6 +14,7 @@ public class Main {
                 " " + TheWoodcutter.getAuthor().getSurname() + " " + TheWoodcutter.getYearOfWriting());
 
 
+        System.out.println(Fisherman);
 
         Fisherman.setYearOfWriting(1465);
         System.out.println("Fisherman.getYearOfWriting1() = " + Fisherman.getYearOfWriting());
